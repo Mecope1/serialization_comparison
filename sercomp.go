@@ -1,14 +1,16 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/vmihailenco/msgpack/v4"
-	"encoding/json"
 	//"encoding/gob"
 	//"github.com/Mecope1/tin-can-communicator/binprot"
-	)
+	//"encoding/xml"
+)
 
 // Separate fns for encoding and decoding as decoding tends to take a longer time.
+// The difference between the two operations can potentially affect the decision of which method to use.
 
 type myStruct struct {
 	VersionNum int

@@ -45,6 +45,7 @@ func BenchmarkJsonDec(b *testing.B) {
 
 
 // Tests involving larger data. The string message now is 457 words or 3147 Bytes
+// This is ~240 times larger than the hello world message used in the previous tests.
 func BenchmarkMsgpackEncLong(b *testing.B) {
 	versionNum := 1
 	sampleNum := 3.14
